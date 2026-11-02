@@ -1,7 +1,7 @@
 const pages=["home","moves","reasons","wishes","gift"],labels=["Home","Moves","Reasons","Wishes","Gift"];
 const $=id=>document.getElementById(id);
 const who="Reshma Sree";
-const photos=['assets/photo1.jpg', 'assets/photo2.jpg', 'assets/photo3.jpg', 'assets/photo4.jpg'];
+const photos=['photo1.jpg', 'photo2.jpg', 'photo3.jpg', 'photo4.jpg'];
 let pi=0;const showP=()=>{$("ph").src=photos[pi]};
 $("prev").onclick=()=>{pi=(pi+photos.length-1)%photos.length;showP()};
 $("next").onclick=()=>{pi=(pi+1)%photos.length;showP()};
